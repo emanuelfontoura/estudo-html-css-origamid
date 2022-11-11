@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            display: block;
+            max-width: 100%;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .cover img{
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom left;
+        }
+
+        .texto{
+            align-self: center;
+        }
+
+        p{
+            max-width: 60ch;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grid">
+        <div class="cover">
+            <img src="images/bicicleta.jpg" alt="Bicicleta">
+        </div>
+
+        <div class="texto">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, harum nam laborum tempore voluptatibus consequuntur reiciendis molestiae neque perferendis assumenda sint et id incidunt cum possimus eveniet deleniti quasi labore!
+            </p>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro facilis sequi quibusdam maiores aut, et eum ab nostrum deserunt amet enim incidunt eos, sint, quod voluptatibus? Adipisci tenetur nesciunt necessitatibus?
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        @media (min-width: 300px){
+            .inicio > img{
+                grid-row: 2;
+            }
+        }
+
+        p{
+            font-size: 2rem;
+        }
+
+        img{
+            display: block;
+            max-width: 100%;
+        }
+
+        .galeria{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="inicio">
+        <img src="images/bicicleta.jpg" alt="Bicicleta">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae quibusdam quidem qui? Consequatur iusto id, est nesciunt recusandae similique quisquam aliquam earum eligendi numquam quasi atque minima in amet?</p>
+    </div>
+
+    <div class="galeria">
+        <img src="images/bicicleta.jpg" alt="Bicicleta">
+        <img src="images/bicicleta.jpg" alt="Bicicleta">
+        <img src="images/bicicleta.jpg" alt="Bicicleta">
+        <img src="images/bicicleta.jpg" alt="Bicicleta">
+        <img src="images/bicicleta.jpg" alt="Bicicleta">
+        <img src="images/bicicleta.jpg" alt="Bicicleta">
+        <img src="images/bicicleta.jpg" alt="Bicicleta">
+        <img src="images/bicicleta.jpg" alt="Bicicleta">
+    </div>
+
+</body>
+</html>
